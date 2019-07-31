@@ -1,5 +1,5 @@
 {
-  "name": "meteor-desktop",
+  "name": "meteor-dt",
   "version": "2.1.0",
   "bin": {
     "meteor-desktop": "lib/bin/cli.js"
