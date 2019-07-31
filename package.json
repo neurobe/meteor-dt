@@ -1,7 +1,9 @@
 {
   "name": "meteor-desktop",
   "version": "2.1.0",
-
+  "bin": {
+    "meteor-desktop": "dist/bin/cli.js"
+  },
   "engines": {
     "node": ">=4.0.0"
   },
