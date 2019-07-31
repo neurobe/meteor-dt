@@ -1,8 +1,8 @@
 {
-  "name": "meteor-desktop",
-  "version": "2.1.0",
+  "name": "meteor-dt",
+  "version": "2.1.2",
   "bin": {
-    "meteor-desktop": "dist/bin/cli.js"
+    "meteor-dt": "dist/bin/cli.js"
   },
   "engines": {
     "node": ">=4.0.0"
@@ -101,7 +101,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/wojtkowiak/meteor-desktop"
+    "url": "https://github.com/neurobe/meteor-dt"
   },
   "keywords": [
     "electron",
@@ -128,7 +128,7 @@
     "all": true
   },
   "bugs": {
-    "url": "https://github.com/wojtkowiak/meteor-desktop/issues"
+    "url": "https://github.com/neurobe/meteor-dt/issues"
   },
-  "homepage": "https://github.com/wojtkowiak/meteor-desktop"
+  "homepage": "https://github.com/neurobe/meteor-dt"
 }

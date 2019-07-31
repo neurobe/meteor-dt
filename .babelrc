@@ -1,11 +1,5 @@
 {
-    "presets": [
-        ["@babel/env", {
-            "targets": {
-                "node": "4"
-            }
-        }]
-    ],
+    "presets": ["@babel/env"], 
     "sourceMaps": true,
     "env": {
         "test": {
