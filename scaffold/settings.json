@@ -1,7 +1,7 @@
 {
-    "name": "My Meteor App",
+    "name": "BioSignal",
     "version": "0.0.1",
-    "projectName": "MyMeteorApp",
+    "projectName": "BioSignal",
     "devTools": true,
     "devtron": true,
     "desktopHCP": true,
@@ -46,14 +46,14 @@
     },
     "dependencies": {},
     "packageJsonFields": {
-        "description": "My Meteor App",
-        "author": "Me, Myself And I",
+        "description": "BoSignal",
+        "author": "BioSignal",
         "private": true
     },
     "builderOptions": {
         "icon": ".desktop/assets/meteor.ico",
         "appId": "meteor.app",
-        "productName": "My Meteor App",
+        "productName": "BioSignal",
         "compression": "maximum",
         "win": {
             "target": "nsis"
@@ -92,13 +92,13 @@
         },
         "appVersion": "@version",
         "buildVersion": "@version",
-        "appCopyright": "Copyright 2018 My Company - All rights reserved.",
+        "appCopyright": "Copyright 2018 BioSignal.Network - All rights reserved.",
         "win32metadata": {
-            "CompanyName": "My Company",
-            "FileDescription": "MyMeteorApp",
-            "OriginalFilename": "MyMeteorApp.exe",
-            "ProductName": "MyMeteorApp",
-            "InternalName": "MyMeteorApp.exe"
+            "CompanyName": "BioSignal",
+            "FileDescription": "BioSignal",
+            "OriginalFilename": "BioSignal.exe",
+            "ProductName": "BioSignal",
+            "InternalName": "BioSignal.exe"
         }
     }
 }

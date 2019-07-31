@@ -1,14 +1,14 @@
 {
   "name": "meteor-dt",
-  "version": "2.1.0",
+  "version": "2.1.2",
   "bin": {
-    "meteor-desktop": "lib/bin/cli.js"
+    "meteor-dt": "dist/bin/cli.js"
   },
   "engines": {
     "node": ">=4.0.0"
   },
   "description": "Build a Meteor's desktop client with hot code push.",
-  "main": "lib/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "cross-env NODE_ENV=test nyc mocha -t 10000 -r ./tests/helpers/clear.js \"tests/+(unit|functional)/**/*.test.js\"",
     "test-integration": "mocha -t 10000 -r reify \"tests/+(integration)/**/*.test.js\"",
@@ -18,9 +18,9 @@
     "coverage-html": "nyc report --reporter=lcov",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "report-coverage": "nyc report --reporter=lcov > coverage.lcov && codecov",
-    "version": "node lib/scripts/propagateVersion.js && git add plugins",
+    "version": "node dist/scripts/propagateVersion.js && git add plugins",
     "postversion": "npm run publish-all",
-    "postinstall": "node lib/scripts/addToScripts || echo",
+    "postinstall": "node dist/scripts/addToScripts || echo",
     "publish-plugins": "(cls || reset) && cd plugins/bundler && (meteor publish --release=METEOR@1.5.4.2) && cd ../watcher && (meteor publish --release=METEOR@1.5.4.2)",
     "prepublish": "npm run build || echo",
     "publish-all": "npm run publish-plugins && npm publish",
