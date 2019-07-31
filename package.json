@@ -1,5 +1,5 @@
 {
-  "name": "meteor-dt",
+  "name": "meteor-desktop",
   "version": "2.1.0",
   "bin": {
     "meteor-desktop": "lib/bin/cli.js"
@@ -24,8 +24,8 @@
     "publish-plugins": "(cls || reset) && cd plugins/bundler && (meteor publish --release=METEOR@1.5.4.2) && cd ../watcher && (meteor publish --release=METEOR@1.5.4.2)",
     "prepublish": "npm run build || echo",
     "publish-all": "npm run publish-plugins && npm publish",
-    "build": "babel lib --out-dir dist --source-maps inline --copy-files",
-    "build-watch": "babel lib --watch --out-dir dist --source-maps inline --copy-files",
+    "build": "babel lib --out-dir lib --source-maps inline --copy-files",
+    "build-watch": "babel lib --watch --out-dir lib --source-maps inline --copy-files",
     "develop": "npm-run-all --parallel build-watch test-watch",
     "generate-docs": "jsdoc2md skeleton/preload.js > docs/api/desktop.md && jsdoc2md skeleton/modules/module.js > docs/api/module.md",
     "update-locks": "(rmdir /S /Q node_modules || rm -rf node_modules || echo) && yarn && (rmdir /S /Q node_modules || rm -rf node_modules) && npm i"
